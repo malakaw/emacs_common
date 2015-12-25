@@ -1,5 +1,5 @@
 ;;--------------basic-----------------------
-(global-set-key (kbd "C-x /") 'helm-find-files)
+
 
 ;;--------------Theme-----------------------
 (require 'color-theme-sanityinc-solarized)
@@ -100,6 +100,7 @@
 ;; If nil, you can slightly boost invoke speed in exchange for text color
 (setq helm-swoop-speed-or-color nil)
 
+(global-set-key (kbd "C-x /") 'helm-find-files)
 
 ;;------copy------
 (defun get-point (symbol &optional arg)
@@ -166,6 +167,3 @@
 
 (global-set-key (kbd "C-<up>") 'move-line-up)
 (global-set-key (kbd "C-<down>") 'move-line-down)
-
-
-
